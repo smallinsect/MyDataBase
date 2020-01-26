@@ -1,0 +1,21 @@
+
+
+
+设置数据库位置
+mongod --dbpath d:\data\db
+安装MongoDB服务器
+mongod.exe --config "D:\Program Files\MongoDB\Server\4.2\mongod.cfg" --install
+安装服务器
+sc.exe create MongoDB binPath= "\"D:\Program Files\MongoDB\Server\4.2\bin\mongod.exe\" --service --config=\"D:\Program Files\MongoDB\Server\4.2\mongod.cfg\"" DisplayName= "MongoDB" start= "auto"
+启动服务
+net start MongoDB
+停止服务
+net stop MongoDB
+删除服务
+sc.exe delete MongoDB
+
+
+
+
+
+
